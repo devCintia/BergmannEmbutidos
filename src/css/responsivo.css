@@ -1,0 +1,65 @@
+@media(max-width: 1024px) {
+    .container {
+        padding: 20px;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    .container .filtros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .container .filtros .categorias-cartas,
+    .container .filtros .preco-cartas,
+    .container .filtros .btn-filtrar {
+        width: 65%;
+    }
+
+    .container .filtros .btn-filtrar {
+        align-self: center;
+    }
+
+    .container .cartas {
+        justify-content: center;
+    }
+
+    .container .carta {
+        margin: 0 auto;
+    }
+
+    .rodape .informacoes-finais {
+        font-size: 14px;
+    }
+
+    .formasDeContato span,
+    i {
+        font-size: 14px;
+    }
+
+}
+
+@media(max-width: 480px) {
+
+    .container .categorias-bolsas,
+    .container .preco-bolsas,
+    .container .btn-filtrar {
+        width: 70%;
+    }
+
+    .container .cartas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detalhe-bolsa h1 {
+        font-size: 20px;
+        text-align: center;
+
+    }
+
+}

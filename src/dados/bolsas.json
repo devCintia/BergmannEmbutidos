@@ -1,0 +1,123 @@
+{
+  "glamour-grande": {
+    "nome": "Bolsa Glamour Fio 35 (30x26cm)",
+    "imagens": [
+      "./src/imagens/GlamourAzul1.jpeg",
+      "./src/imagens/GlamourAzul2.jpeg",
+      "./src/imagens/GlamourAzul3.jpeg"
+    ],
+    "preco": "R$ 230,00",
+    "descricao": "Bolsa feita com fio 35, perfeita para quem busca espaço e elegância.",
+    "link": "https://wa.me/5553984061888?text=Olá!%20Tenho%20interesse%20na%20Bolsa%20Glamour.%20Veja%20a%20imagem:%20https://devcintia.github.io/EntreFios/src/imagens/GlamourAzul1.jpeg",
+    "relacionados": ["glamour-media"]
+  },
+  "glamour-media": {
+    "nome": "Bolsa Glamour Fio 35 (27x20cm)",
+    "imagens": [
+      "./src/imagens/GlamourAzulMedia1.jpeg",
+      "./src/imagens/GlamourAzulMedia2.jpeg",
+      "./src/imagens/GlamourAzulMedia3.jpeg"
+    ],
+    "preco": "R$ 170,00",
+    "descricao": "Bolsa média com acabamento artesanal e estilo marcante.",
+    "link": "https://wa.me/5553984061888?text=Olá!%20Tenho%20interesse%20na%20Bolsa%20Glamour.%20Veja%20a%20imagem:%20https://devcintia.github.io/EntreFios/src/imagens/GlamourAzulMedia1.jpeg",
+    "relacionados": ["glamour-grande"]
+  },
+  "minizinha": {
+    "nome": "Bolsa Minizinha",
+    "imagens": [
+      "./src/imagens/minizinha.jpeg"
+    ],
+    "preco": "R$ 80,00",
+    "descricao": "Bolsa Minizinha! Um charme!",
+    "link": "https://wa.me/5553984061888?text=Olá!%20Tenho%20interesse%20na%20Bolsa%20Minizinha.%20Veja%20a%20imagem:%20https://devcintia.github.io/EntreFios/src/imagens/minizinha.jpeg",
+    "relacionados": ["lila"]
+  },
+  "naty": {
+    "nome": "Bolsa Naty (28x20cm)",
+    "imagens": [
+      "./src/imagens/BolsaNaty2.jpeg",
+      "./src/imagens/BolsaNaty1.jpeg"
+    ],
+    "preco": "R$ 140,00",
+    "descricao": "Bolsa Naty! Você vai se apaixonar!",
+    "link": "https://wa.me/5553984061888?text=Olá!%20Tenho%20interesse%20na%20Bolsa%20Naty.%20Veja%20a%20imagem:%20https://devcintia.github.io/EntreFios/src/imagens/BolsaNaty1.jpeg",
+    "relacionados": ["bela"]
+  },
+  "bela": {
+    "nome": "Bolsa Bela (24x17cm)",
+    "imagens": [
+      "./src/imagens/BolsaBela1.jpeg",
+      "./src/imagens/BolsaBela2.jpeg",
+      "./src/imagens/BolsaBela3.jpeg",
+      "./src/imagens/BolsaBela4.jpeg"
+    ],
+    "preco": "R$ 130,00",
+    "descricao": "Bolsa Bela! Você vai se apaixonar!",
+    "link": "https://wa.me/5553984061888?text=Olá!%20Tenho%20interesse%20na%20Bolsa%20Bela.%20Veja%20a%20imagem:%20https://devcintia.github.io/EntreFios/src/imagens/BolsaBela4.jpeg",
+    "relacionados": ["lila"]
+  },
+  "vitoria": {
+    "nome": "Bolsa Vitória (39x24cm)",
+    "imagens": [
+      "./src/imagens/BolsaVitoria.jpeg",      
+      "./src/imagens/BolsaVitoriaVideo.mp4"      
+    ],
+    "preco": "R$ 190,00",
+    "descricao": "Bolsa Vitória! Além de linda, cabe tudo o que vc precisa!",
+    "link": "https://wa.me/5553984061888?text=Olá!%20Tenho%20interesse%20na%20Bolsa%20Vitoria.%20Veja%20a%20imagem:%20https://devcintia.github.io/EntreFios/src/imagens/BolsaVitoria.jpeg",
+    "relacionados": ["melissa"]
+  },
+  "glamour-marrom": {
+    "nome": "Bolsa Glamour Fio 28 (30x27cm)",
+    "imagens": [
+      "./src/imagens/GlamourMarrom.jpeg"
+    ],
+    "preco": "R$ 150,00",
+    "descricao": "Bolsa média com acabamento artesanal.",
+    "link": "https://wa.me/5553984061888?text=Olá!%20Tenho%20interesse%20na%20Bolsa%20Glamour.%20Veja%20a%20imagem:%20https://devcintia.github.io/EntreFios/src/imagens/GlamourMarrom.jpeg",
+    "relacionados": ["glamour-marrom-rosa"]
+  },
+  "glamour-marron-rosa": {
+    "nome": "Bolsa Glamour Fio 28 (30x23cm)",
+    "imagens": [
+      "./src/imagens/GlamourMarromERosa.jpeg"
+    ],
+    "preco": "R$ 150,00",
+    "descricao": "Bolsa média com acabamento artesanal.",
+    "link": "https://wa.me/5553984061888?text=Olá!%20Tenho%20interesse%20na%20Bolsa%20Glamour.%20Veja%20a%20imagem:%20https://devcintia.github.io/EntreFios/src/imagens/GlamourMarromERosa.jpeg",
+    "relacionados": ["glamour-marrom"]
+  },
+  "glamour-preta-rosa": {
+    "nome": "Bolsa Glamour Fio 28 (30x25cm)",
+    "imagens": [
+      "./src/imagens/GlamourPretaERosa.jpeg"
+    ],
+    "preco": "R$ 150,00",
+    "descricao": "Bolsa média com acabamento artesanal.",
+    "link": "https://wa.me/5553984061888?text=Olá!%20Tenho%20interesse%20na%20Bolsa%20Glamour.%20Veja%20a%20imagem:%20https://devcintia.github.io/EntreFios/src/imagens/GlamourPretaERosa.jpeg",
+    "relacionados": ["glamour-marrom"]
+  },
+  "lila": {
+    "nome": "Bolsa Lila (25x15cm)",
+    "imagens": [
+      "./src/imagens/BolsaPerolas1.jpeg",
+      "./src/imagens/BolsaPerolas2.jpeg",
+      "./src/imagens/BolsaPerolas3.jpeg"
+    ],
+    "preco": "R$ 130,00",
+    "descricao": "Bolsa Lila! Os detalhes desta bolsa são encantadores😍! Vem se apaixonar vc também!",
+    "link": "https://wa.me/5553984061888?text=Olá!%20Tenho%20interesse%20na%20Bolsa%20Lila.%20Veja%20a%20imagem:%20https://devcintia.github.io/EntreFios/src/imagens/BolsaPerolas3.jpeg",
+    "relacionados": ["minizinha"]
+  },
+  "melissa": {
+    "nome": "Bolsa Melissa",
+    "imagens": [
+      "./src/imagens/BolsaMelissa.jpeg"
+    ],
+    "preco": "R$ 150,00",
+    "descricao": "Bolsa Melissa! Belíssima bolsa com fio de malha 36mm!",
+    "link": "https://wa.me/5553984061888?text=Olá!%20Tenho%20interesse%20na%20Bolsa%20Melissa.%20Veja%20a%20imagem:%20https://devcintia.github.io/EntreFios/src/imagens/BolsaMelissa.jpeg",
+    "relacionados": ["vitoria"]
+  }
+}

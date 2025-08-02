@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bergmann - Embutidos - Derivados de carne</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./src/css/reset.css">
+        <link rel="stylesheet" href="./src/css/estilos.css">
+        <link rel="stylesheet" href="./src/css/responsivo.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+            integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header class="cabecalho">
+            <img src="./src/imagens/logoPreto.jpg" alt="Logo Bergmann">
+        </header>
+        <main class="container">
+            <section class="redes-sociais">
+                <a href="https://wa.me/5553984061888" target="_blank"
+                    class="outer-shadow"><i class="fab fa-whatsapp"></i></a>
+
+                <!-- <a href="https://www.instagram.com/bolsas_ef/"
+                    target="_blank" class="outer-shadow"><i
+                        class="fab fa-instagram"></i></a> -->
+            </section>
+            <h1 class="produtos">Produtos</h1>
+            <div class="filtros">
+                <div class="categorias-bolsas">
+                    <label for="categoria">Categoria</label>
+                    <select id="categoria" class="categoria">
+                        <option value>Selecione o produto</option>
+                        <option value="presunto">Presunto</option>
+                        <option value="mortadela">Mortadela</option>
+                        <option value="salame">Salame</option>
+                        <option value="linguica">Linguiça</option>
+                        <option value="salsicha">Salsicha</option>
+                        <option value="morcela">Morcela</option>
+                        <option value="bacon">Bacon</option>
+                        <option value="peitoFrango">Peito de Frango</option>
+                    </select>
+                </div>
+                <!-- <div class="preco-bolsas">
+                    <label for="preco">Preço máximo (R$)</label>
+                    <input type="text" id="preco" class="preco"
+                        placeholder="Ex: 100">
+                </div> -->
+                <button class="btn-filtrar">Aplicar filtros</button>
+            </div>
+            <ul class="bolsas">
+                <li class="produtoBergmann" data-categoria="presunto">
+                        <img src="./src/imagens/Imagens site existente/presunto.jpg"
+                            alt="Presunto" class="imgprodutoBergmann" /></a>
+                    <div class="informacoes">
+                        <h2 class="nome-personagem">Presunto</h2>
+                        <span class="categoria">Fatiado e embalado em pct de 200g, 500g ou 3 Kg: R$: 27,00 Kg </span>
+                        <span class="categoria">Inteiro (de peça) +- 4,5 Kg : 26,00 Kg </span>
+                    </div>
+                </li>
+                <li class="produtoBergmann" data-categoria="mortadela">
+                        <img src="./src/imagens/Imagens site existente/mortadelaPequena.jpg"
+                            alt="mostadela" class="imgprodutoBergmann" /></a>
+                    <div class="informacoes">
+                        <h2 class="nome-personagem">Mortadela de Peça</h2>
+                        <span class="categoria">Mortadela inteira. Peça com 300g ou +- 3 Kg: R$: 10,00 Kg </span>
+                    </div>
+                </li>
+                <li class="produtoBergmann" data-categoria="mortadela">
+                        <img src="./src/imagens/Imagens site existente/mortadelaFatiada.jpg"
+                            alt="mortadela" class="imgprodutoBergmann" /></a>
+                    <div class="informacoes">
+                        <h2 class="nome-personagem">Mortadela Fatiada</h2>
+                        <span class="categoria">Mortadela fatiada e embalada em pct de 500g: R$: 8,00 pct </span>
+                    </div>
+                </li>
+                <li class="produtoBergmann" data-categoria="peitoFrango">
+                        <img src="./src/imagens/Imagens site existente/peitoFrango.jpg"
+                            alt="PeitoFrango" class="imgprodutoBergmann" /></a>
+                    <div class="informacoes">
+                        <h2 class="nome-personagem">Peito de frango</h2>
+                        <span class="categoria">Peito de frango defumado e fatiado. Pacote de 500g: R$: 11,00 o pct </span>
+                    </div>
+                </li>
+                <li class="produtoBergmann" data-categoria="salame">
+                        <img src="./src/imagens/Imagens site existente/salameItaliano.jpg"
+                            alt="salame" class="imgprodutoBergmann" /></a>
+                    <div class="informacoes">
+                        <h2 class="nome-personagem">Salame</h2>
+                        <span class="categoria">Salame italiano. Peça de +- 700g: R$ 52,00 Kg </span>
+                        <span class="categoria">Salame italiano fatiado. Pacote de 500g: R$ 28,00 pct </span>
+                    </div>
+                </li>
+                <li class="produtoBergmann" data-categoria="salame">
+                        <img src="./src/imagens/Imagens site existente/salaminho.jpg"
+                            alt="salame" class="imgprodutoBergmann" /></a>
+                    <div class="informacoes">
+                        <h2 class="nome-personagem">Salaminho</h2>
+                        <span class="categoria">Salame italiano. Peças de +- 150g: R$ 52,00 Kg </span>
+                    </div>
+                </li>
+                <li class="produtoBergmann" data-categoria="morcela">
+                        <img src="./src/imagens/Imagens site existente/morcelaBranca.jpg"
+                            alt="morcela" class="imgprodutoBergmann" /></a>
+                    <div class="informacoes">
+                        <h2 class="nome-personagem">Morcela Branca</h2>
+                        <span class="categoria">Morcela Branca. Embalada em Peça de +- 350g: R$: 20,00 Kg </span>
+                    </div>
+                </li>
+                <li class="produtoBergmann" data-categoria="salsicha">
+                        <img src="./src/imagens/Imagens site existente/salsichaTradicional.png"
+                            alt="salsicha" class="imgprodutoBergmann" /></a>
+                    <div class="informacoes">
+                        <h2 class="nome-personagem">Salsicha</h2>
+                        <span class="categoria">Salsicha defumada tradicional, pacote de 500g: R$ 8,00 pct </span>
+                        <span class="categoria">Salsicha defumada tradicional, curta e longa. Pacote de 2,5 Kg: R$: 29,00 pct </span>
+                        <span class="categoria">Salsicha Hot Dog. Pacote de 3 Kg: R$: 25,00 pct </span>
+                    </div>
+                </li>
+                <li class="produtoBergmann" data-categoria="linguica">
+                        <img src="./src/imagens/Imagens site existente/calabresaTradicional.jpg"
+                            alt="linguica" class="imgprodutoBergmann" /></a>
+                    <div class="informacoes">
+                        <h2 class="nome-personagem">Linguiça Calabresa</h2>
+                        <span class="categoria">Linguiça Calabresa tradicional com defumação natural. Pacote de +- 2,5 Kg: R$ 22,00 Kg </span>
+                        <span class="categoria">Linguiça Calabresa tradicional com defumação natural. Pacote de +- 200g: R$ 25,00 Kg </span>
+                        
+                    </div>
+                </li>
+                <li class="produtoBergmann" data-categoria="linguica">
+                        <img src="./src/imagens/Imagens site existente/calabresaFina.jpg"
+                            alt="linguica" class="imgprodutoBergmann" /></a>
+                    <div class="informacoes">
+                        <h2 class="nome-personagem">Linguiça Calabresa Fina</h2>
+                        <span class="categoria">Linguiça Calabresa Fina com defumação natural. Pacote de +- 1 Kg: R$ 22,00 Kg </span>
+                        <span class="categoria">Linguiça Calabresa Fina com defumação natural. Pacote de +- 200g: R$ 25,00 Kg </span>
+                    </div>
+                </li>
+                 <li class="produtoBergmann" data-categoria="linguica">
+                        <img src="./src/imagens/Imagens site existente/calabresaReta.jpg"
+                            alt="linguica" class="imgprodutoBergmann" /></a>
+                    <div class="informacoes">
+                        <h2 class="nome-personagem">Linguiça Calabresa Reta</h2>
+                        <span class="categoria">Linguiça Calabresa Reta com defumação natural. Pacote de +- 3 Kg: R$ 22,00 Kg </span>
+                    </div>
+                </li>
+                 <li class="produtoBergmann" data-categoria="linguica">
+                        <img src="./src/imagens/Imagens site existente/linguicaFinaMistaEspecial.jpg"
+                            alt="linguica" class="imgprodutoBergmann" /></a>
+                    <div class="informacoes">
+                        <h2 class="nome-personagem">Linguiça Fina</h2>
+                        <span class="categoria">Linguiça Fina Mista. Pacote de +- 500g: R$ 26,00 Kg </span>
+                        <span class="categoria">Linguiça Fina Carne Suína. Pacote de +- 500g: R$ 26,00 Kg </span>
+                    </div>
+                </li>
+                  <li class="produtoBergmann" data-categoria="linguica">
+                        <img src="./src/imagens/Imagens site existente/linguicaSuinaColonial.jpg"
+                            alt="linguica" class="imgprodutoBergmann" /></a>
+                    <div class="informacoes">
+                        <h2 class="nome-personagem">Linguiça Suína Campeira</h2>
+                        <span class="categoria">Linguiça Suína Campeira. Pacote de +- 700g: R$ 26,00 Kg </span>
+                    </div>
+                </li>
+                <li class="produtoBergmann" data-categoria="linguica">
+                        <img src="./src/imagens/Imagens site existente/linguicagrossasuina.jpeg"
+                            alt="linguica" class="imgprodutoBergmann" /></a>
+                    <div class="informacoes">
+                        <h2 class="nome-personagem">Linguiça Grossa Carne Suína</h2>
+                        <span class="categoria">Linguiça Grossa de Carne Suína. Pacote de +- 700g: R$ 26,00 Kg </span>
+                    </div>
+                </li>
+                <li class="produtoBergmann" data-categoria="linguica">
+                        <img src="./src/imagens/Imagens site existente/linguicaSeca.jpg"
+                            alt="linguica" class="imgprodutoBergmann" /></a>
+                    <div class="informacoes">
+                        <h2 class="nome-personagem">Linguiça Seca</h2>
+                        <span class="categoria">Linguiça Seca. Peça de +- 350g: R$ 27,00 Kg </span>
+                    </div>
+                </li>
+                <li class="produtoBergmann" data-categoria="bacon">
+                        <img src="./src/imagens/Imagens site existente/baconManta.jpg"
+                            alt="bacon" class="imgprodutoBergmann" /></a>
+                    <div class="informacoes">
+                        <h2 class="nome-personagem">Bacon Manta</h2>
+                        <span class="categoria">Bacon Manta Defumado. Pacote à vácuo +- 2,5 Kg: R$ 32,00 Kg </span>
+                        <span class="categoria">Bacon Manta Defumado. Peça de +- 5 Kg: R$ 31,00 Kg </span>
+                    </div>
+                </li>
+                <li class="produtoBergmann" data-categoria="bacon">
+                        <img src="./src/imagens/Imagens site existente/baconPeq.jpg"
+                            alt="bacon" class="imgprodutoBergmann" /></a>
+                    <div class="informacoes">
+                        <h2 class="nome-personagem">Bacon</h2>
+                        <span class="categoria">Bacon Defumado Gourmet. Pacote +- 200g: R$ 32,00 Kg </span>
+                    </div>
+                </li>
+                
+            </ul>
+
+        </main>
+        <footer class="rodape">
+            <div class="informacoes-finais">
+                <img  class="imgLogo" src="./src/imagens/logo.png">
+                <section class="formasDePgto">
+                    <h3>Forma de Pagamento:</h3>
+                    <h4>Boleto para 7 dias</h4>
+                    
+                </section>
+                <section class="formasDeContato">
+                    <h3>Fale Conosco! Faça seu pedido!</h3>
+                    <a href="https://wa.me/5553984061888" target="_blank"
+                        class="outer-shadow"><i
+                            class="fab fa-whatsapp"></i><span>Em Canguçu, através do seguinte telefone:(53)984061888</span></a><br>
+                            <span></span>
+
+                    <!-- <a href="https://www.instagram.com/bolsas_ef/"
+                        target="_blank" class="outer-shadow"><i
+                            class="fab fa-instagram"></i><span>Instagram</span></a> -->
+                </section>
+            </div>
+
+        </footer>
+        <script src="./src/js/index.js"></script>
+
+    </body>
+</html>

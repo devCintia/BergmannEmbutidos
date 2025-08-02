@@ -1,0 +1,247 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.cabecalho {
+    background: linear-gradient(to bottom, #050505e2 15%, #eff3ee08 100%);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.cabecalho img {
+    width: 20vw;
+    /* 20% da largura da tela */
+    max-width: 300px;
+    /* nunca maior que 300px */
+    min-width: 120px;
+    /* nunca menor que 120px */
+    height: auto;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.container .redes-sociais {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+}
+
+.container .redes-sociais a {
+    font-size: 35px;
+    color: #601717;
+}
+
+.container .redes-sociais a:hover {
+    color: #555;
+}
+
+.container .produtos {
+    color: #601717;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 32px;
+    line-height: 32px;
+    letter-spacing: 2px;
+}
+
+.container .filtros {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+}
+
+.container .categorias-bolsas,
+.container .preco-bolsas {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.container label {
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #601717;
+}
+
+.container .categorias-bolsas select,
+.container .preco-bolsas input {
+    padding: 16px 13px;
+    border-radius: 2px;
+    border: 2px solid #888888;
+    background-color: #f2eefa;
+    color: #130234;
+    height: 52px;
+}
+
+.container select:focus,
+.container input:focus,
+.container select:focus-visible,
+.container input:focus-visible {
+    outline: none;
+}
+
+.container select.categoria {
+    appearance: none;
+    background: url(../imagens/seta-para-baixo.png) 97% center no-repeat;
+}
+
+.container .filtros .btn-filtrar {
+    border: none;
+    background-color: #601717;
+    color: #ededed;
+    padding: 16px 32px;
+    font-weight: 500;
+    align-self: end;
+    height: 52px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.container .filtros .btn-filtrar:hover {
+    background-color: #555;
+}
+
+.container .bolsas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 32px;
+    margin-top: 32px;
+    align-items: stretch;
+}
+
+.container .bolsas .produtoBergmann {
+    max-width: 365px;
+    background-color: #ededed;
+    color: #0e0027;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgb(0, 0, 0, 0.2);
+}
+
+.container .produtoBergmann {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 80px;
+} 
+
+.container .produtoBergmann .imgprodutoBergmann {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.container .produtoBergmann .informacoes {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.container .produtoBergmann .informacoes .nome-personagem {
+    font-size: 24px;
+    font-weight: 700;
+    color: #111111;
+}
+
+.container .produtoBergmann .informacoes .categoria {
+    color: #7e7e7e;
+    font-weight: 700;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #5e0d0d;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.rodape .informacoes-finais {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.rodape .informacoes-finais .imgLogo{
+    max-width: 75px;
+}
+
+.rodape .informacoes-finais .formasDePgto h3,
+.formasDeContato h3 {
+    color: #4d8e5c;
+}
+
+.rodape .informacoes-finais .formasDePgto h4,
+p {
+    color: #6c6c6c;
+}
+
+.rodape .informacoes-finais .formasDePgto p {
+    margin-left: 13px;
+}
+
+.formasDeContato a {
+    font-size: 20px;
+    color: #6c6c6c;
+}
+
+.formasDeContato a i {
+    margin-right: 8px;
+}
+
+.esconder {
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}
+
+.galeria {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+#imagem-principal {
+    width: 50%;
+}
+
+#video-principal {
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+    .rodape .informacoes-finais {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rodape {
+        padding: 30px 10px;
+    }
+
+    .rodape .informacoes-finais .formasDePgto,
+    .rodape .informacoes-finais .formasDeContato {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .formasDeContato a {
+        font-size: 18px;
+    }
+}
