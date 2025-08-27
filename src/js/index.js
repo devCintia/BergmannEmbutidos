@@ -48,7 +48,6 @@ botaoFiltrar.addEventListener('click', () => {
 
 let carrinho = [];
 
-// Abrir/fechar carrinho
 document.getElementById("cart-icon").addEventListener("click", () => {
   document.getElementById("cart-panel").classList.add("active");
 });
@@ -56,7 +55,6 @@ document.getElementById("close-cart").addEventListener("click", () => {
   document.getElementById("cart-panel").classList.remove("active");
 });
 
-// Adicionar produtos
 document.querySelectorAll(".add-to-cart").forEach(botao => {
   botao.addEventListener("click", () => {
     let produto = botao.dataset.produto;
@@ -81,6 +79,8 @@ function atualizarCarrinho() {
     `;
     lista.appendChild(li);
   });
+
+  atualizarBadge();
 }
 
 function removerItem(index) {
@@ -88,7 +88,18 @@ function removerItem(index) {
   atualizarCarrinho();
 }
 
-// Finalizar no WhatsApp
+function atualizarBadge() {
+  let count = carrinho.reduce((soma, item) => soma + item.qtd, 0);
+  let badge = document.getElementById("cart-count");
+
+  if (count > 0) {
+    badge.textContent = count;
+    badge.style.display = "inline-block";
+  } else {
+    badge.style.display = "none";
+  }
+}
+
 document.getElementById("checkout").addEventListener("click", () => {
   if (carrinho.length === 0) {
     alert("Seu carrinho está vazio!");
@@ -103,6 +114,7 @@ document.getElementById("checkout").addEventListener("click", () => {
 
   window.open(`https://wa.me/5553984061888?text=${mensagem}`, "_blank");
 });
+
 
 
 
