@@ -45,9 +45,9 @@ botaoFiltrar.addEventListener('click', () => {
     });
 });
 
-
 let carrinho = [];
 
+// abre/fecha carrinho
 document.getElementById("cart-icon").addEventListener("click", () => {
   document.getElementById("cart-panel").classList.add("active");
 });
@@ -55,26 +55,37 @@ document.getElementById("close-cart").addEventListener("click", () => {
   document.getElementById("cart-panel").classList.remove("active");
 });
 
+// adicionar itens
 document.querySelectorAll(".add-to-cart").forEach(botao => {
   botao.addEventListener("click", () => {
     let produto = botao.dataset.produto;
-    let qtd = parseInt(prompt(`Quantas unidades de ${produto}?`));
+
+    // regra: se for linguiça seca, pergunta em kg
+    let tipo = (produto.toLowerCase().includes("linguiça seca")) ? "kg" : "un";
+    let pergunta = (tipo === "kg")
+      ? `Quantos quilos de ${produto}?`
+      : `Quantas unidades de ${produto}?`;
+
+    // parseFloat pq pode ter peso com casas decimais
+    let qtd = parseFloat(prompt(pergunta));
 
     if (!isNaN(qtd) && qtd > 0) {
-      carrinho.push({ produto, qtd });
+      carrinho.push({ produto, qtd, tipo });
       atualizarCarrinho();
     }
   });
 });
 
+// atualizar lista no carrinho
 function atualizarCarrinho() {
   let lista = document.getElementById("cart-items");
   lista.innerHTML = "";
 
   carrinho.forEach((item, index) => {
+    let unidade = (item.tipo === "kg") ? "kg" : "un";
     let li = document.createElement("li");
     li.innerHTML = `
-      ${item.qtd}x ${item.produto}
+      ${item.qtd}${unidade} ${item.produto}
       <button onclick="removerItem(${index})">❌</button>
     `;
     lista.appendChild(li);
@@ -83,11 +94,13 @@ function atualizarCarrinho() {
   atualizarBadge();
 }
 
+// remover item
 function removerItem(index) {
   carrinho.splice(index, 1);
   atualizarCarrinho();
 }
 
+// badge (número no carrinho)
 function atualizarBadge() {
   let count = carrinho.reduce((soma, item) => soma + item.qtd, 0);
   let badge = document.getElementById("cart-count");
@@ -100,6 +113,7 @@ function atualizarBadge() {
   }
 }
 
+// finalizar compra
 document.getElementById("checkout").addEventListener("click", () => {
   if (carrinho.length === 0) {
     alert("Seu carrinho está vazio!");
@@ -109,11 +123,122 @@ document.getElementById("checkout").addEventListener("click", () => {
   let mensagem = "Olá! Quero finalizar minha compra:%0A";
 
   carrinho.forEach(item => {
-    mensagem += `- ${item.qtd}x ${item.produto}%0A`;
+    let unidade = (item.tipo === "kg") ? "kg" : "un";
+    mensagem += `- ${item.qtd}${unidade} ${item.produto}%0A`;
   });
 
   window.open(`https://wa.me/5553984061888?text=${mensagem}`, "_blank");
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let carrinho = [];
+
+// document.getElementById("cart-icon").addEventListener("click", () => {
+//   document.getElementById("cart-panel").classList.add("active");
+// });
+// document.getElementById("close-cart").addEventListener("click", () => {
+//   document.getElementById("cart-panel").classList.remove("active");
+// });
+
+// document.querySelectorAll(".add-to-cart").forEach(botao => {
+//   botao.addEventListener("click", () => {
+//     let produto = botao.dataset.produto;
+//     let qtd = parseInt(prompt(`Quantas unidades de ${produto}?`));
+
+//     if (!isNaN(qtd) && qtd > 0) {
+//       carrinho.push({ produto, qtd });
+//       atualizarCarrinho();
+//     }
+//   });
+// });
+
+// function atualizarCarrinho() {
+//   let lista = document.getElementById("cart-items");
+//   lista.innerHTML = "";
+
+//   carrinho.forEach((item, index) => {
+//     let li = document.createElement("li");
+//     li.innerHTML = `
+//       ${item.qtd}x ${item.produto}
+//       <button onclick="removerItem(${index})">❌</button>
+//     `;
+//     lista.appendChild(li);
+//   });
+
+//   atualizarBadge();
+// }
+
+// function removerItem(index) {
+//   carrinho.splice(index, 1);
+//   atualizarCarrinho();
+// }
+
+// function atualizarBadge() {
+//   let count = carrinho.reduce((soma, item) => soma + item.qtd, 0);
+//   let badge = document.getElementById("cart-count");
+
+//   if (count > 0) {
+//     badge.textContent = count;
+//     badge.style.display = "inline-block";
+//   } else {
+//     badge.style.display = "none";
+//   }
+// }
+
+// document.getElementById("checkout").addEventListener("click", () => {
+//   if (carrinho.length === 0) {
+//     alert("Seu carrinho está vazio!");
+//     return;
+//   }
+
+//   let mensagem = "Olá! Quero finalizar minha compra:%0A";
+
+//   carrinho.forEach(item => {
+//     mensagem += `- ${item.qtd}x ${item.produto}%0A`;
+//   });
+
+//   window.open(`https://wa.me/5553984061888?text=${mensagem}`, "_blank");
+// });
 
 
 
