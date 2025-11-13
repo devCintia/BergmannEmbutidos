@@ -32,8 +32,22 @@ body {
 }
 
 .container .redes-sociais a {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
     font-size: 35px;
     color: #601717;
+    z-index: 2000; /* garante que fique acima do rodapé */
+    background: #ffffff; /* fundo para contrastar sem mudar a cor do ícone */
+    padding: 10px; /* espaço ao redor do ícone */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    text-decoration: none;
 }
 
 .container .redes-sociais a:hover {
@@ -101,7 +115,7 @@ body {
     height: 52px;
     cursor: pointer;
     letter-spacing: 2px;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
 .container .filtros .btn-filtrar:hover {
@@ -387,3 +401,4 @@ p {
         font-size: 18px;
     }
 }
+

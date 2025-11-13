@@ -133,7 +133,6 @@ document.getElementById("checkout").addEventListener("click", () => {
 
 
 
-
 // let carrinho = [];
 
 // document.getElementById("cart-icon").addEventListener("click", () => {

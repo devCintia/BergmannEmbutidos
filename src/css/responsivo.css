@@ -36,8 +36,9 @@
         font-size: 14px;
     }
 
+    /* limitar o selector <i> apenas dentro de .formasDeContato para não afetar ícones globais */
     .formasDeContato span,
-    i {
+    .formasDeContato i {
         font-size: 14px;
     }
 
@@ -62,4 +63,34 @@
 
     }
 
+    .container .redes-sociais {
+        /* garante que o container não interfira no posicionamento do botão */
+        pointer-events: none;
+    }
+
+    .container .redes-sociais a {
+        pointer-events: auto;
+        /* link continua clicável */
+        bottom: 14px;
+        right: 12px;
+        width: 50px; /* aumento leve do diâmetro */
+        height: 50px;
+        padding: 4px; /* reduz espaço entre ícone e borda */
+        font-size: 26px; /* ícone maior */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.20); /* sombra mais próxima e menos difusa */
+        z-index: 3000; /* permanece acima */
+        /* ainda mais acima em mobile */
+        -webkit-tap-highlight-color: transparent;
+        touch-action: manipulation;
+    }
+
+    /* opcional: reduzir o ícone do carrinho para evitar sobreposição visual */
+    #cart-icon {
+        top: 12px;
+        right: 12px;
+        font-size: 24px;
+        padding: 8px 12px;
+    }
+
 }
+
